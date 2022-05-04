@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch a meal</title>
+
+    <link rel="stylesheet" href="mealdb_assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lemonada|Muli&display=swap" rel="stylesheet">
+
+    <script src="mealdb_assets/js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="lds-hourglass"></div>
+
+    <div class="container">
+        <div class="hungry">
+            <h3>Feeling Hungry and don't know what to cook?</h3>
+            <h4>Get a random meal by clicking below</h4>
+
+            <button class="btn btn-green" id="get_meal">Get Random Meal</button>
+            
+            <h4>Or Search below for the name of recipe</h4>
+            <input type="text" name="recipe_name" id="recipe_name">
+            <button class="btn btn-green" id="search_meal">Search Meal</button>
+        </div>
+
+        <div class="meal" id="display_meal">
+            
+
+            <div class="meal_desc">
+                <div class="meal_desc--left">
+                    <div class="meal_recipe">
+                        <div class="meal_recipe--image">
+                        </div>
+                    </div>
+
+                    <div class="meal_details">
+                        <h5>Category : <span class="normal normal--category"></span></h5>
+                        <h5>Area : <span class="normal normal--area"></span></h5>
+                        <h5>Tags : <span class="normal normal--tags"></span></h5>
+                        <h5>Drinks Alternates : <span class="normal normal--drinks"></span></h5>
+                    </div>
+                </div>
+
+                <div class="meal_desc--right">
+                    <h3 class="meal_name"></h3>
+                    <div class="meal_recipe">
+                        <div class="meal_recipe--text">
+                            
+                        </div>
+                    </div>
+
+                    <div class="meal_ingredients">
+                        <h4>Ingredients</h4>
+                        <ul class="ingredient-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal_video">
+                <h3>Video Recipe</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
